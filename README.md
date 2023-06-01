@@ -1,31 +1,44 @@
-# Selling Partner API for PHP
+<p align="center">
+    <a href="https://highsidelabs.co" target="_blank">
+        <img src="https://github.com/highsidelabs/.github/blob/main/images/logo.png?raw=true" width="125">
+    </a>
+</p>
+
+<p align="center">
+    <a href="https://packagist.org/packages/jlevers/selling-partner-api"><img alt="Total downloads" src="https://img.shields.io/packagist/dt/jlevers/selling-partner-api.svg?style=flat-square"></a>
+    <a href="https://packagist.org/packages/jlevers/selling-partner-api"><img alt="Latest stable version" src="https://img.shields.io/packagist/v/jlevers/selling-partner-api.svg?style=flat-square"></a>
+    <a href="https://packagist.org/packages/jlevers/selling-partner-api"><img alt="License" src="https://img.shields.io/packagist/l/jlevers/selling-partner-api.svg?style=flat-square"></a>
+</p>
+
+## Selling Partner API for PHP
 A PHP library for connecting to Amazon's [Selling Partner API](https://github.com/amzn/selling-partner-api-docs/).
 
-[![Total Downloads](https://img.shields.io/packagist/dt/jlevers/selling-partner-api.svg?style=flat-square)](https://packagist.org/packages/jlevers/selling-partner-api)
-[![Latest Stable Version](https://img.shields.io/packagist/v/jlevers/selling-partner-api.svg?style=flat-square)](https://packagist.org/packages/jlevers/selling-partner-api)
-[![License](https://img.shields.io/packagist/l/jlevers/selling-partner-api.svg?style=flat-square)](https://packagist.org/packages/jlevers/selling-partner-api)
+### Related packages
 
-| | |
-| ------ | ------ |
-| [![Highside Labs Logo](https://highsidelabs.co/static/favicons/favicon.png)](https://highsidelabs.co) | **This package is developed and maintained as part of [Highside Labs](https://highsidelabs.co). If you need support integrating with Amazon's (or any other e-commerce platform's) APIs, we're happy to help! Shoot us an email at [hi@highsidelabs.co](mailto:hi@highsidelabs.co). We'd love to hear from you :)** |
+* [`highsidelabs/laravel-spapi`](https://github.com/highsidelabs/laravel-spapi): A [Laravel](https://laravel.com) wrapper for this package that makes SP API integration in Laravel projects quick and easy.
+* [`highsidelabs/amazon-business-api`](https://github.com/highsidelabs/amazon-business-api): A PHP library for Amazon's [Business API](https://developer-docs.amazon.com/amazon-business/docs), with a near-identical interface to this package.
+* [`highsidelabs/walmart-api`](https://github.com/highsidelabs/walmart-api-php): A PHP library for [Walmart's seller and supplier APIs](https://developer.walmart.com), including the Marketplace, Drop Ship Vendor, Content Provider, and Warehouse Supplier APIs.
 
-If you've found this library useful, please consider [becoming a Sponsor](https://github.com/sponsors/jlevers), or making a one-time donation via the button below. I appreciate any and all support you can provide!
+---
 
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate?business=EL4PRLAEMGXNQ&currency_code=USD)
+**This package is developed and maintained by [Highside Labs](https://highsidelabs.co). If you need support integrating with Amazon's (or any other e-commerce platform's) APIs, we're happy to help! Shoot us an email at [hi@highsidelabs.co](mailto:hi@highsidelabs.co). We'd love to hear from you :)**
+
+If you've found any of our packages useful, please consider [becoming a Sponsor](https://github.com/sponsors/jlevers), or making a one-time donation via the button below. I appreciate any and all support you can provide!
+
+<p align="center">
+    <a href="https://www.paypal.com/donate?business=EL4PRLAEMGXNQ&currency_code=USD"><img alt="Donate to Highside Labs" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"></a>
+</p>
+
+### Sponsored by **[Tesmo](https://tesmollc.com)**.
 
 ---
 
 ## Features
 
-* Supports all Selling Partner API operations (for Sellers and Vendors) as of 11/13/2022 ([see here](#supported-api-segments) for links to documentation for all calls)
+* Supports all Selling Partner API operations (for Sellers and Vendors) as of 4/11/2023 ([see here](#supported-api-segments) for links to documentation for all calls)
 * Supports applications made with both IAM user and IAM role ARNs ([docs](#setup))
 * Automatically generates Restricted Data Tokens for all calls that require them -- no extra calls to the Tokens API needed
 * Includes a [`Document` helper class](#uploading-and-downloading-documents) for uploading and downloading feed/report documents
-
-
-## Sponsors
-
-* **[Tesmo](https://tesmollc.com)**
 
 
 ## Installation
@@ -64,7 +77,7 @@ You need a few things to get started:
 * An AWS IAM user or role configured for use with the Selling Partner API
 * A Selling Partner API application
 
-If you're looking for more information on how to set those things up, check out [this blog post](https://jesseevers.com/selling-partner-api-access/). It provides a detailed walkthrough of the whole setup process.
+If you're looking for more information on how to set those things up, check out [this blog post](https://highsidelabs.co/blog/selling-partner-api-access/). It provides a detailed walkthrough of the whole setup process.
 
 
 ### Setup
@@ -189,7 +202,7 @@ It also means that if a new version of an existing API is introduced, the librar
 * [A+ Content API (2020-11-01)](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/AplusContentV20201101Api.md)
 * [Authorization API (V1)](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/AuthorizationV1Api.md)
 * [Catalog Items API (2022-04-01)](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/CatalogItemsV20220401Api.md)
-* [Catalog Items API (2021-12-01)](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/CatalogItemsV20211201Api.md)
+* [Catalog Items API (2021-12-01)](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/CatalogItemsV20201201Api.md)
 * [Catalog Items API (V0)](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/CatalogItemsV0Api.md)
 * [EasyShip API (2022-03-23)](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/EasyShipV20220323Api.md)
 * [FBA Inbound API (V0)](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/FbaInboundV0Api.md)
@@ -206,6 +219,7 @@ It also means that if a new version of an existing API is introduced, the librar
 * [Notifications API (V1)](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/NotificationsV1Api.md)
 * [Orders API (V0)](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/OrdersV0Api.md)
 * [Product Pricing API (V0)](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/ProductPricingV0Api.md)
+* [Product Pricing API (V2022-05-01)](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/ProductPricingV20220501Api.md)
 * [Product Type Definitions API (2020-09-01)](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/ProductTypeDefinitionsV20200901Api.md)
 * [Reports API (2021-06-30)](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/ReportsV20210630Api.md)
 * [Sales API (V1)](https://github.com/jlevers/selling-partner-api/blob/main/docs/Api/SalesV1Api.md)
@@ -327,10 +341,10 @@ $feedsApi = new FeedsApi($config);
 // ...
 
 $feedId = '1234567890';  // From the createFeed call
-$feed = $api->getFeed($feedId);
+$feed = $feedsApi->getFeed($feedId);
 
 $feedResultDocumentId = $feed->resultFeedDocumentId;
-$feedResultDocument = $api->getFeedDocument($feedResultDocumentId);
+$feedResultDocument = $feedsApi->getFeedDocument($feedResultDocumentId);
 
 $docToDownload = new SellingPartnerApi\Document($feedResultDocument, $feedType);
 $contents = $docToDownload->download();  // The raw report data
